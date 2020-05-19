@@ -45,7 +45,7 @@ public class DepartmentListController implements Initializable {
 	private ObservableList<Department> obsList;
 	
 	@FXML
-	private void onBtNewAction (ActionEvent event) {
+	public void onBtNewAction (ActionEvent event) {
 		Stage parentStage = Utils.currentStage(event);
 		createDialogForm("/gui/DepartmentFrom.fxml", parentStage);
 	}
